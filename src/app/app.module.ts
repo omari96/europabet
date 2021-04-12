@@ -21,8 +21,6 @@ import { CommonModule } from '@angular/common';
    
     HttpClientModule,
   ],
-  exports:[
-  ],
   providers: [],
   bootstrap: [AppComponent]
 })

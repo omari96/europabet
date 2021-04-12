@@ -16,6 +16,7 @@ import { DetailComponent } from './detail/detail.component';
 import { BonusModule } from '../bonus/bonus.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { UserRoutingModule } from './user-routing.module';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     ReactiveFormsModule,
     MatButtonModule,
-    AppRoutingModule,
+    UserRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
     BonusModule,

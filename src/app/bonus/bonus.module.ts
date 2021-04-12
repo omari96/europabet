@@ -9,8 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
-import { AppRoutingModule } from '../app-routing.module';
 import {MatDialogModule} from '@angular/material/dialog';
+import { BonusRoutingModule } from './bonus-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,11 +26,13 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSelectModule,
     MatFormFieldModule,
     MatTableModule,
-    AppRoutingModule,
+    BonusRoutingModule,
     MatDialogModule
   ],
   exports:[
-    ListComponent
+    ListComponent,
+    BonusRoutingModule
+    
   ]
 })
 export class BonusModule { }

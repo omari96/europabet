@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "omaria",
+      "name": "omar",
       "lastName": "nutsubidze",
       "pid": 515165515155,
       "mobNum": 598480481,
@@ -76,13 +76,6 @@
       "id": 1
     },
     {
-      "id": 2,
-      "userId": 2,
-      "type": "Freespin",
-      "bonusQuantity": 2,
-      "currency": "USD"
-    },
-    {
       "id": 3,
       "userId": 3,
       "type": "Freesbet",
@@ -109,6 +102,20 @@
       "currency": "USD",
       "bonusQuantity": "5",
       "id": 7
+    },
+    {
+      "userId": "1",
+      "bonusType": "Freebet",
+      "currency": "USD",
+      "bonusQuantity": "4",
+      "id": 8
+    },
+    {
+      "userId": "2",
+      "bonusType": "Freebet",
+      "currency": "USD",
+      "bonusQuantity": "4",
+      "id": 9
     }
   ]
 }
