@@ -1,0 +1,6 @@
+<div class="container">
+    <h1>მომხმარებლის რედაქტირება</h1>
+
+    <app-forms-view [userForm]="userForm"></app-forms-view>
+    <button mat-raised-button type="submit" (click)="updateUser()" [disabled]="userForm.invalid">რედაქტირება</button>
+</div>

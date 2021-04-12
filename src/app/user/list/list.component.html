@@ -1,0 +1,54 @@
+<div class="mat-elevation-z8 height">
+
+    <button mat-raised-button class="mr-20" [routerLink]="['/add']">მომხმარებლის დამატება</button>
+    
+    <div class="filter-cont">
+        <input type="search" (keyup)="applyFilter($event)" placeholder="search...">
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> id. </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <ng-container matColumnDef="lastName">
+            <th mat-header-cell *matHeaderCellDef> number </th>
+            <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+        </ng-container>
+        <ng-container matColumnDef="mobNum">
+            <th mat-header-cell *matHeaderCellDef> mobNum </th>
+            <td mat-cell *matCellDef="let element"> {{element.mobNum}} </td>
+        </ng-container>
+        <ng-container matColumnDef="pid">
+            <th mat-header-cell *matHeaderCellDef> pid </th>
+            <td mat-cell *matCellDef="let element"> {{element.pid}} </td>
+        </ng-container>
+        <ng-container matColumnDef="country">
+            <th mat-header-cell *matHeaderCellDef> country </th>
+            <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+        </ng-container>
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef class="center"> Action </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-raised-button mat-button [routerLink]="['/edit', element.id]">Edit</button>
+                <button mat-raised-button mat-button (click)="deleteUser(element.id);$event.stopPropagation();">delete</button>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onRowClicked(row)"
+            [routerLink]="['/detail', row.id]"></tr>
+    </table>
+    <mat-paginator
+         class="mat-elevation-z8" 
+         [pageIndex]="pageIndex" 
+         [length]="length"
+         [pageSize]="pageSize"
+         (page)="fillUser($event)"
+         >
+    </mat-paginator>
+</div>
+

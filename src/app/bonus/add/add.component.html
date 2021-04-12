@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>ბონუსის დამატება</h1>
+    <div class="cont">
+        <form class="example-form" [formGroup]="bonusForm">
+            <mat-form-field appearance="fill" >
+                <mat-label>bonusType</mat-label >
+                <mat-select disableRipple formControlName="bonusType" >
+                    <mat-option *ngFor="let value of toppingList" value={{value}}>{{value}}</mat-option>
+
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>currency</mat-label>
+                <mat-select disableRipple formControlName="currency" >
+                    <mat-option *ngFor="let value of currencyList" value={{value}}>{{value}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label> bonusQuantity</mat-label>
+                <input matInput formControlName="bonusQuantity" placeholder="Enter bonusQuantity" required>
+            </mat-form-field>
+        </form>
+        <button mat-raised-button class="mr-20" (click)=" createBonus()" [disabled]="bonusForm.invalid">ბონუსის დამატება</button>
+    </div>
+</div>

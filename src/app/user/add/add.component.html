@@ -1,0 +1,6 @@
+<div class="container">
+    <h1>მომხმარებლის შექმანა</h1>
+
+    <app-forms-view [userForm]="userForm"></app-forms-view>
+    <button mat-raised-button type="submit" (click)="createUser()" [disabled]="userForm.invalid">დამატება</button>
+</div>

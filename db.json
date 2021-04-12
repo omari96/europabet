@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "omaria",
+      "lastName": "nutsubidze",
+      "pid": 515165515155,
+      "mobNum": 598480481,
+      "country": "asdas",
+      "city": "kutaisi",
+      "address": "asdijasifjaiof",
+      "gender": "ქალი"
+    },
+    {
+      "id": 2,
+      "name": "omari",
+      "lastName": "nutsubidze",
+      "gender": "male",
+      "pid": 515165515155,
+      "mobNum": 598480481,
+      "country": "georgia",
+      "city": "kutaisi",
+      "address": "asdijasifjaiof"
+    },
+    {
+      "id": 3,
+      "name": "omari",
+      "lastName": "avaliani",
+      "gender": "male",
+      "pid": 515165515155,
+      "mobNum": 598480481,
+      "country": "georgia",
+      "city": "kutaisi",
+      "address": "asdijasifjaiof"
+    },
+    {
+      "id": 4,
+      "name": "omari",
+      "lastName": "nutsubidze",
+      "pid": 515165515155,
+      "mobNum": 598480481,
+      "country": "georgia",
+      "city": "kutaisi",
+      "address": "asdijasifjaiof",
+      "gender": "male"
+    },
+    {
+      "id": 5,
+      "name": "omari",
+      "lastName": "nutsubidze",
+      "gender": "male",
+      "pid": 515165515155,
+      "mobNum": 598480481,
+      "country": "georgia",
+      "city": "kutaisi",
+      "address": "asdijasifjaiof"
+    },
+    {
+      "id": 6,
+      "name": "omari",
+      "lastName": "nutsubidze",
+      "gender": "male",
+      "pid": 515165515155,
+      "mobNum": 598480481,
+      "country": "georgia",
+      "city": "kutaisi",
+      "address": "asdijasifjaiof"
+    }
+  ],
+  "bonus": [
+    {
+      "userID": "",
+      "BonusType": "2",
+      "currency": "2",
+      "bonusQuantity": "99",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "type": "Freespin",
+      "bonusQuantity": 2,
+      "currency": "USD"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "type": "Freesbet",
+      "bonusQuantity": 2,
+      "currency": "USD"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "type": "Freesbet",
+      "bonusQuantity": 2,
+      "currency": "USD"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "type": "Freesbet",
+      "bonusQuantity": 2,
+      "currency": "USD"
+    },
+    {
+      "userId": "4",
+      "bonusType": "Freespin",
+      "currency": "USD",
+      "bonusQuantity": "5",
+      "id": 7
+    }
+  ]
+}

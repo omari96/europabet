@@ -1,0 +1,30 @@
+<form [formGroup]="userForm">
+
+    <label>name</label>
+    <input type="text" placeholder="Enter name" formControlName="name" required pattern="[a-zA-Z ]*">
+
+    <label>lastName</label>
+    <input type="text" placeholder="Enter lastName" formControlName="lastName" required pattern="[a-zA-Z ]*">
+
+    <label>pid</label>
+    <input type="text" placeholder="Enter pid" formControlName="pid" required>
+
+    <label>mobNum</label>
+    <input type="text" placeholder="Enter mobNum" formControlName="mobNum" required>
+
+    <label>country</label>
+    <input type="text" placeholder="Enter country" formControlName="country" required>
+
+    <label>city</label>
+    <input type="text" placeholder="Enter city" formControlName="city" required>
+
+    <label>address</label>
+    <input type="text" placeholder="Enter address" formControlName="address" required>
+
+    <div class="checkbox-cont">
+        <div class="checkbox" *ngFor="let gender of genders">
+            <label>{{gender}}</label>
+            <input class="radio-input" type="radio" formControlName="gender" [value]="gender">
+        </div>
+    </div>
+</form>

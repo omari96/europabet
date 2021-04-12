@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .checkbox-cont {
+        display: flex;
+
+        .checkbox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+            .radio-input {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    label {
+        color: black;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%;
+        min-width: 150px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background-color: white;
+        font-size: 15px;
+        color: black;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    input.ng-invalid{
+        border-left: 1px solid red;
+    }
+    input.ng-valid {
+        border-left: 5px solid green;
+    }
+}
